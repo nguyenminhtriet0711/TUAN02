@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+  body {
+    margin: 0;
+    padding: 40px;
+    font-family: 'Segoe UI', sans-serif;
+    background: #eef3f7;
+  }
+
+  .checkout-form {
+    max-width: 600px;
+    margin: auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  }
+
+  .checkout-form h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 25px;
+  }
+
+  .section {
+    margin-bottom: 25px;
+    padding: 20px;
+    background-color: #f9fbfd;
+    border-radius: 10px;
+    border: 1px solid #dce3ec;
+  }
+
+  .section h3 {
+    margin-bottom: 15px;
+    color: #555;
+    font-size: 18px;
+  }
+
+  label {
+    display: block;
+    margin-top: 12px;
+    font-weight: 500;
+    color: #444;
+  }
+
+  input[type="text"],
+  input[type="tel"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.05);
+  }
+
+  input[type="radio"] {
+    margin-right: 8px;
+    transform: scale(1.1);
+  }
+
+  textarea {
+    resize: vertical;
+  }
+
+  button {
+    width: 100%;
+    padding: 14px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  button:hover {
+    background-color: #0056b3;
+  }
+</style>
+</head>
+<body>
+    <body>
+  <div class="checkout-form">
+    <h2>Thanh toán đơn hàng</h2>
+    
+    <form>
+      <!-- Địa chỉ giao hàng -->
+      <div class="section">
+        <h3>Địa chỉ giao hàng</h3>
+        <label for="fullname">Họ và tên:</label>
+        <input type="text" id="fullname" required>
+
+        <label for="address">Địa chỉ:</label>
+        <input type="text" id="address" required>
+
+        <label for="phone">Số điện thoại:</label>
+        <input type="tel" id="phone" required>
+      </div>
+
+      <!-- Phương thức thanh toán -->
+      <div class="section">
+        <h3>Phương thức thanh toán</h3>
+        <label><input type="radio" name="payment" value="cod" checked> Thanh toán khi nhận hàng</label><br>
+        <label><input type="radio" name="payment" value="bank"> Chuyển khoản ngân hàng</label><br>
+        <label><input type="radio" name="payment" value="card"> Thẻ tín dụng/Ghi nợ</label>
+      </div>
+
+      <!-- Ghi chú -->
+      <div class="section">
+        <h3>Ghi chú cho đơn hàng</h3>
+        <textarea rows="4" placeholder="Ví dụ: Giao buổi sáng, gọi trước khi đến..."></textarea>
+      </div>
+
+      <!-- Nút đặt hàng -->
+      <button type="submit">Hoàn tất thanh toán</button>
+    </form>
+  </div>
+</body>
+</body>
+</html>

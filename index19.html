@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+  body {
+    margin: 0;
+    padding: 40px;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f0f4f8;
+    color: #333;
+  }
+
+  .event-page {
+    max-width: 800px;
+    margin: auto;
+  }
+
+  .event-page h1 {
+    text-align: center;
+    font-size: 32px;
+    color: #2c3e50;
+    margin-bottom: 40px;
+  }
+
+  .event-item {
+    display: flex;
+    border-left: 6px solid #bbb;
+    background: #ffffff;
+    margin-bottom: 20px;
+    padding: 16px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    transition: background 0.3s;
+  }
+
+  .event-item .date {
+    font-size: 16px;
+    font-weight: bold;
+    color: #555;
+    margin-right: 20px;
+    min-width: 110px;
+    text-align: center;
+    background: #e1ecf4;
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+  .event-item .details h3 {
+    margin: 0;
+    color: #1a1a1a;
+    font-size: 18px;
+  }
+
+  .event-item .details p {
+    margin-top: 6px;
+    font-size: 14px;
+    color: #555;
+  }
+
+  /* Highlight sự kiện gần nhất */
+  .event-item.nearest {
+    border-left-color: #007bff;
+    background: #e9f3ff;
+  }
+
+  .event-item.nearest .date {
+    background: #d0e7ff;
+    color: #003f7f;
+  }
+</style>
+</head>
+<body>
+    <body>
+  <div class="event-page">
+    <h1>Lịch sự kiện</h1>
+
+    <div class="event-item nearest">
+      <div class="date">21/06/2025</div>
+      <div class="details">
+        <h3>Hội chợ Công nghệ Mùa Hè</h3>
+        <p>Tổ chức tại Trung tâm Hội nghị Quốc gia. Quy tụ các thương hiệu lớn trong ngành công nghệ.</p>
+      </div>
+    </div>
+
+    <div class="event-item">
+      <div class="date">25/06/2025</div>
+      <div class="details">
+        <h3>Ngày hội Việc Làm IT</h3>
+        <p>Giao lưu giữa sinh viên và doanh nghiệp trong lĩnh vực công nghệ thông tin.</p>
+      </div>
+    </div>
+
+    <div class="event-item">
+      <div class="date">30/06/2025</div>
+      <div class="details">
+        <h3>Chương trình Ca nhạc Mùa Hè</h3>
+        <p>Diễn ra tại Công viên thành phố, quy tụ các ca sĩ nổi tiếng.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</body>
+</html>
